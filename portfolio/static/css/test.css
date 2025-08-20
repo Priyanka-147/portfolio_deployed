@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 25, 25);
+    font-family: "Roboto";
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.navbar{
+    max-width: 1440px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#name-highlight{
+    color: dodgerblue;
+}
+.white-text{
+    color: white;
+}
+
+.logo h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.logo img {
+    width:60px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.nav-links a img {
+    width: 14px;
+    filter: invert(1);
+}
+
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding:10px 50px;
+}
+
+.hero-content {
+    width: 55%;
+    display: flex;
+    gap: 22px;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.hero-content h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.hero-content big{
+    color: white;
+    font-size: 16px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 16px;
+    font-size: 15px;
+}
+
+.hero-btns button {
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    background-color: royalblue;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.hero-image {
+    width: 37%;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(4, 82, 184);
+}
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: black;
+    padding:50px 50px;
+}
+
+.about-header h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 50px;
+    text-align: left;
+    font-size: 35px;
+}
+
+.about-image {
+    width: 45%;
+}
+
+.about-section img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 25px
+}
+
+.about-text p {
+    color: white;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    gap: 5px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links a img {
+    width: 30px;
+    filter: invert(1);
+}
+
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding:10px 50px;
+}
+
+.project-header h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.project-content {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 35, 35);
+    width: 31%;
+    border-radius: 10px;
+}
+.project-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px;
+}
+
+.project-text h3 {
+    color: white;
+    font-size: 16px;
+}
+
+.project-text p {
+    color: white;
+    font-size: 12px;
+}
+
+.project-skills {
+    display: flex;
+    gap: 5px;
+}
+
+.project-skills span {
+    background-color: rgb(109, 109, 255);
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 10px;
+    color: blue;
+}
+
+.project-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.project-btns button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.project-btns button img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding:10px 50px;
+    background-color: black;
+}
+
+.skill-header h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.skill-content {
+    display: flex;
+    gap: 12px;
+}
+
+.skill-card {
+    width: 24%;
+    border-radius: 8px;
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-header {
+    display: flex;
+    gap: 10px;
+}
+
+.card-header img {
+    width: 14px;
+    filter: invert(1);
+}
+
+.card-header h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.skill-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.skill-card ul li {
+    list-style: none;
+    color: white;
+    font-size: 25px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding:10px 50px;
+}
+
+.contact-header h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-form {
+    width: 50%;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-form form label {
+    color: white;
+    font-size: 14px;
+}
+
+.contact-form form input, textarea {
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgb(45, 126, 255);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14;
+    color: white;
+}
+
+.contact-form form textarea {
+    height: 100px;
+}
+
+.contact-form form button {
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    background-color: royalblue;
+    border-radius: 5px;
+    color: whitesmoke;
+    width: fit-content;
+}
+
+.contact-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(35, 35, 35);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact-text h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.contact-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-text ul li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-size: 10px;
+    align-items: center;
+}
+
+.contact-text ul li img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.connect-me {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.connect-me p {
+    font-size: 12px;
+    color: white;
+}
+
+.connect-me ul {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.connect-me ul li a {
+    text-decoration:  none;
+    display: flex;
+    
+}
+
+
+.footer {
+    display: flex;
+    gap: 25px;
+    padding:10px 50px;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.footer .rights p {
+    color: white;
+    font-size: 15px;
+}
+
+.footer .foot-links {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.foot-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
