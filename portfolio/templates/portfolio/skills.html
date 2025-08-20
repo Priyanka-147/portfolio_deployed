@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/skills.css' %}">
+</head>
+<body>
+        <!--skill-section starts from here-->
+        <div class="skill-section">
+            <div class="skill-header">
+                <h1>Technical Skills</h1>
+            </div>
+            <div class="skill-content">
+                {% for category in skill_categories %}
+                <div class="skill-card">
+                    <div class="card-header">
+                        <img src="{{ category.icon.url }}" alt="{{ category.name }}">
+                        <h3>{{ category.name }}</h3>
+                    </div>
+                    <ul>
+                        {% for skill in category.skills.all %}
+                            <li>{{ skill.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    <div class="main-container">
+        <!--Navbar starts from here-->
+        <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'images/cat.jpg' %}" alt="Logo">
+                <h1>
+                    <span id="name-highlight">Priyanka's</span>
+                    <span class="white-text">Portfolio</span>
+                </h1>
+            </div>
+            <div class="nav-links">
+                {% for link in navbar_links %}
+                    {% if link.url %}
+                        <a href="{{ link.url }}">
+                            {% if link.icon %}<img src="{{ link.icon.url }}" alt="{{ link.name }}">{% endif %}
+                            {{ link.name|default:"" }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        {% block content %}{% endblock %}
+
+        <!--footer section starts from here-->
+        <div class="footer">
+            <div class="rights">
+                <p>© 2025 All rights reserved.</p>
+            </div>
+            <div class="foot-links">
+                {% for link in footer_links %}
+                    {% if link.url and link.name %}
+                        <a href="{{ link.url }}">{{ link.name }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

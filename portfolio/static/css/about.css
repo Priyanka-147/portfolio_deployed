@@ -1,0 +1,60 @@
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: black;
+    padding:50px 50px;
+}
+
+.about-header h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 50px;
+    text-align: left;
+    font-size: 35px;
+}
+
+.about-image {
+    width: 45%;
+}
+
+.about-section img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 25px
+}
+
+.about-text p {
+    color: white;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    gap: 5px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links a img {
+    width: 30px;
+    filter: invert(1);
+}

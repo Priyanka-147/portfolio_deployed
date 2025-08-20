@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 25, 25);
+    font-family: "Roboto";
+}
+.project-section {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding:10px 50px;
+}
+
+.project-header h1 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.project-content {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 35, 35);
+    width: 31%;
+    border-radius: 10px;
+}
+.project-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px;
+}
+
+.project-text h3 {
+    color: white;
+    font-size: 16px;
+}
+
+.project-text p {
+    color: white;
+    font-size: 12px;
+}
+
+.project-skills {
+    display: flex;
+    gap: 5px;
+}
+
+.project-skills span {
+    background-color: rgb(109, 109, 255);
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 10px;
+    color: blue;
+}
+
+.project-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.project-btns button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.project-btns button img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding:10px 50px;
+    background-color: black;
+}
+
+.skill-header h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.skill-content {
+    display: flex;
+    gap: 12px;
+}
+
+.skill-card {
+    width: 24%;
+    border-radius: 8px;
+    background-color: rgb(35, 35, 35);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-header {
+    display: flex;
+    gap: 10px;
+}
+
+.card-header img {
+    width: 14px;
+    filter: invert(1);
+}
+
+.card-header h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.skill-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.skill-card ul li {
+    list-style: none;
+    color: white;
+    font-size: 25px;
+}
