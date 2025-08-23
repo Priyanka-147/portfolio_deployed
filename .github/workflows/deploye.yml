@@ -36,7 +36,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: showcasedb.priyankabhammarkar.me   # 👈 from your cPanel
+          server: priyankabhammarkar.me   # 👈 from your cPanel
           username: ${{ secrets.FTP_USERNAME }}  # set this in GitHub Secrets
           password: ${{ secrets.FTP_PASSWORD }}  # set this in GitHub Secrets
           protocol: ftp                        # try ftps first
