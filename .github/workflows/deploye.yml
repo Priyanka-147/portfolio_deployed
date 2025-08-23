@@ -28,7 +28,7 @@ jobs:
           DJANGO_SETTINGS_MODULE: config.settings
           SECRET_KEY: django-insecure-1nyq@6j1y&9(nq204bgai^1nt*$!l288i1r3a4#qhy=4-9h9^d
           DEBUG: "0"
-          ALLOWED_HOSTS: "showcasedb.priyankabhammarkar.me"
+          ALLOWED_HOSTS: "priyankabhammarkar.me"
           GITHUB_ACTIONS: "true"
         run: |
           python manage.py collectstatic --noinput
